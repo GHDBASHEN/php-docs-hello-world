@@ -58,7 +58,7 @@ jobs:
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9159C21AC0A44F20B9A5E3052D35F96A }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6C2EF29E5ADC48A1B28CBFD1A6770133 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4F475BFCCF3344A4BB4B3D7FEEB5CE3E }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_a8f68e51-1d0a-485f-9372-ad18f8c82515 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -67,4 +67,5 @@ jobs:
           app-name: 'TG1055'
           slot-name: 'Production'
           package: .
+
           
